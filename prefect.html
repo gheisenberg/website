@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129190022-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-129190022-1', { 'anonymize_ip': true });
+		</script>
+		<title>Prefect Projekt: Leitung Prof. Dr. Heisenberg</title>
+
+		<!-- meta -->
+		<meta name="robots" content="index,follow" />
+		<meta name="description" content="Entwicklung eines Deep Learning Prognosemodells, welches die Wahrscheinlichkeit einer Hungersnot derart berechnet, dass eine angemessene Katastrophenhilfe so weit wie möglich sichergestellt werden kann, bevor eine Notsituation eintritt.." />
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <!-- css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/ionicons.min.css">
+		<link rel="stylesheet" href="css/pace.css">
+	    <link rel="stylesheet" href="css/layout.css">
+        
+        <!-- js -->
+        <script src="js/jquery-2.1.3.min.js"></script>
+	    <script src="js/modernizr.custom.js"></script>
+	</head>
+
+	<body>
+		<div class="container">	
+			<header id="site-header">
+				<div class="row">
+					<div class="col-md-4 col-sm-5 col-xs-8">
+						<div class="logo">
+							<h1><a href="index.html"><b>Gernot</b> Heisenberg</a></h1>
+						</div>
+					</div><!-- col-md-4 -->
+					<div class="col-md-8 col-sm-7 col-xs-4">
+						<nav class="main-nav">
+							<div class="navbar-header">
+  								<button type="button" id="trigger-mobile_menu" class="navbar-toggle">
+    								<span class="ion-navicon"></span>
+  								</button>
+							</div>
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  								<ul class="nav navbar-nav navbar-right">
+    								<li class="cl-effect-11"><a href="index.html">Consulting</a></li>
+    								<li class="cl-effect-11"><a class="active" href="forschung.html">Forschung</a></li>
+                                    
+                                    <li class="cl-effect-11"><a href="lehre.html">Lehre</a></li>
+                                    <li class="cl-effect-11"><a href="uebermich.html">Über Mich</a></li>
+    								<li class="cl-effect-11"><a href="kontakt.html">Kontakt</a></li>
+  								</ul>
+							</div>
+						</nav>
+					</div><!-- col-md-8 -->
+				</div>
+			</header>
+		</div>
+        
+		<div class="content-body">
+			<div class="container">
+				<div class="row">
+					<main class="col-md-8">
+						<article class="post post-1">
+							<header class="entry-header">
+								<h1 class="entry-title">PREFECT<br>Deep Learning Ansätze für Food Insecurity</h1>
+								<div class="entry-meta">
+								<div class="entry-content clearfix">Projektbeschreibung und Ergebnisse</div>
+								</div>
+							</header>
+                            
+                            
+							<div class="entry-content clearfix">
+
+								<ul>
+									<span class="highlight-col">Problemstellung</span><br>
+									Hilfsorganisationen und Regierungen unternehmen große Anstrengungen, um die negativen Auswirkungen von durch Ernährungsunsicherheit 
+									verursachten Krisen wie Hungersnöte oder Massenmigration zu lösen. Eine der begrenztesten Ressourcen, mit denen diese Akteure 
+									konfrontiert sind, ist der Mangel an Vorbereitungszeit für eine konsistente und nachhaltige Planung der Nothilfe wie die Einrichtung 
+									von Flüchtlingslagern oder die Sicherung der Versorgung mit Nahrungsmitteln und Energie. Daher ist die Verlängerung der Vorbereitungszeit 
+									ein wesentlicher Schritt, der zur Rettung vieler Leben führen kann. Ziel des Prefect Projekts ist es, die Vorlaufzeit durch die Entwicklung 
+									eines auf maschinellem Lernen basierenden Prognosemodells zu verlängern, das in der Lage ist, die Wahrscheinlichkeit für nahrungsunsichere 
+									Gebiete zu berechnen, indem es aus historischen Daten lernt. 
+									Anschließend wird die Vorhersagegenauigkeit des Modells validiert. Sobald die Genauigkeit des Modells eine gute Vorhersage
+									der Validierungs- und Testdatensätze erlaubt, können reale Vorhersagen über die Wahrscheinlichkeit einer Hungersnot berechnet werden.
+									
+									<br><span class="highlight-col">Ansatz Deep Learning</span><br>
+									Zur Durchführung solcher Berechnungen wird unser, auf einem Deep Learning Ansatz basiertes, Prognosemodell auf der Grundlage historischer 
+									Open-Access-Daten für das Horn von Afrika(2009-2018) entwickelt und trainiert. Wir verwendeten Daten zu Niederschlag, Bodenfeuchte und Vegetation, die durch Fernerkundung gewonnen 
+									wurden, sowie sozioökonomische, medizinische Daten, Daten zu bewaffneten Konflikten und Katastrophen. Um räumliche Inkonsistenzen in den 
+									Eingabedaten zu überwinden und die Anforderungen an eine räumlich homogene Eingabe für neuronale Netze zu erfüllen, wurden alle Daten in 
+									georeferenzierte Rasterkarten umgewandelt. Die Daten zu Katastrophen und bewaffneten Konflikten wurden an die Distrikte angepasst, während 
+									die Preise auf dem lokalen Lebensmittelmarkt durch einen Inverse Distance Weighting Ansatz interpoliert wurden. 
+									Als Kennzeichnungswert für die Ernährungssicherheit wurde der IPC (Integrated Phase Classifier) mit Werten von 1 (Allgemeine 
+									Ernährungssicherheit) bis 5 (Hungersnot) verwendet. Beispielwerte sind für die Monate August bis September 2019 in der folgenden Abbildung dargestellt.
+									<div class="flexbox"> <img src="images/ipc_label_horn_of_africa.png" alt="IPC Werte am Horn von Afrika" class="prefect-images"></div>
+									Zur Modellierung wurde ein Deep Learning Ansatz verwendet [2]. Während wir in einem ersten 
+									Ansatz mit einem einfachen Neuronalen Netz begonnen haben zu modellieren, versuchen wir nun, Convolutional Neural Networks (CNNs) und 
+									Recurrent Neural Networks (RNNs) zu kombinieren, wie von Interdonato et al. vorgeschlagen [3]. Dadurch können wir beide Stärken 
+									kombinieren, wie z.B. die räumliche Autokorrelation der CNNs und die Fähigkeit, auf zeitliche Abhängigkeiten in Fernerkundungsdaten durch 
+									RNNs zu reagieren. Mehrere Feature Selection Analysen wurden auf die gesammelten Daten angewendet, wie Multikollinearität, Cluster- und 
+									Hauptkomponentenanalysen, um die Dimensionalität des Merkmalsraums zu reduzieren. Damit wurde jedem Pixel in den Rasterkarten 
+									vom Horn von Afrika ein 56-dimensionaler Merkmalsvektor zugeordnet. Das Horn von Afrika berechnen wir zurzeit mit einer Auflösung 
+									von 40x47 Pixeln . Die Evaluierung unserer Methode wurde unter Verwendung von Kreuzvalidierung sowie von Metriken wie F1-Score, OA und MCC durchgeführt. 
+									
+									
+									<br><span class="highlight-col">Bisherige Ergebnisse und Schlussfolgerung</span><br>
+									Die bisherigen Forschungsarbeiten liefern wertvolle Erkenntnisse über die Möglichkeiten, die die Daten zur Analyse und Klassifizierung 
+									einer komplexen Katastrophe wie einer Hungersnot bieten. Es scheint einen möglichen Weg zu geben, die Ernährungssituation in Hochrisikoländern 
+									mit Hilfe offener Daten zu bewerten und zu klassifizieren. In einigen Fällen überschneiden sich unsere Ergebnisse mit den Ergebnissen in 
+									der einschlägigen Literatur [4,5,6,7]. Unser Feature Engineering Prozess und insbesondere die Clusteranalysen und die PCA haben schon gezeigt, 
+									dass die einflussreichsten Faktoren Naturkatastrophen und Epidemien sind, die gefährdete Staaten wie die Länder der Sahelzone und des Horns 
+									von Afrika treffen können. Darüber hinaus förderte die Clusteranalyse Einblicke in die zugrundeliegende Systematik und ermöglicht es, 
+									mehrere Länder als gepoolte Daten auch auf nationaler Ebene weiter zu untersuchen. Es scheint möglich zu sein, Länder oder regionale 
+									Distrikte auf der Grundlage ökonometrischer Cluster zu kategorisieren, wie z.B. Länder oder regionale Distrikte mit hoher Verschuldung/niedrigem 
+									Einkommen oder Länder mit niedrigem mittleren Einkommen. Mit Hilfe des Neuronalen Netzes wurden bisher ebenfalls recht ermutigende 
+									Ergebnisse für die IPC-Klassifikation erzielt. Die unterne Abbildung (oberes Bild) zeigt die erreichten F1-Werte pro Label. Da die verfügbaren Daten 
+									unter einem gravierenden Ungleichgewicht der IPC Klassen leiden, sind die Ergebnisse für die Labels 3 und 4 nicht besonders genau. 
+									Betrachtet man die F1-Werte pro Pixel (untere linke und rechte Bilder in der Abbildung), so sind im Vergleich große weiße Flächen zu erkennen, 
+									die aufgrund der sehr spärlichen Datenlage zunächst aus der Berechnung ausgeschlossen werden mussten. 
+									Die gelben Pixel zeigen eine sehr hohe Vorhersagegenauigkeit, die dunkeln eine sehr niedrige.
+									Hier liegt unter anderem der Schwerpunkt unserer zukünftigen Aktivitäten. 
+									<div class="flexbox"> <img src="images/classification_results_horn_of_africa.png" alt="Klassifikationsergebnisse des IPC am Horn von Afrika" class="prefect-images"></div>
+
+									<br><span class="highlight-col">Referenzen</span>
+									<ol>
+										<li>Fews Administrative in Zusammenarbeit mit US Aid, http://fews.net/data, zuletzt besucht am 20. Februar (2020).</li>
+										<li>L. Zhang, B. Du: Deep Learning für Fernerkundungsdaten: ein technisches Tutorium zum Stand der Technik. IEEE Geosci. Fernerkundung. Mag. 4, 22-40, DOI: 10.1109/MGRS.2016.2540798, (2016).</li>
+										<li>R. Interdonato, D. Ienco, R. Gaetano, K. Ose, DuPLO: A DUal view Point deep Learning architecture for time series classificatiOn, ISPRS Journal of Photogrammetry and Remote Sensing 149, 91-104, DOI: 10.1016/j.isprsjprs.2019.01.011, (2019).</li>
+										<li>F. Sarracino: Erklärende Hungersnöte: Eine kritische Überprüfung der Hauptansätze und weiterer kausaler Faktoren, NAF International Working Paper serie, Nr. 10/02, (2010).</li>
+										<li>M. Ravallion: Hungersnot und Wirtschaft Oxfam: Causing Hunger (Ein Überblick über die Nahrungsmittelkrise in Afrika), (2006).
+											M. J. Cohen, D. Reeves.</li> 
+										<li>M. J. Cohen, D. Reeves Ursachen des Hungers, International Food Policy Research Institute, 2020 Brief 19, Mai 1995, (1995).</li>
+										<li>O.B. Akpomuvie, Ph.D.: Die Menschen - Ernährungsproblem in Afrika: The Quest for Food Security, Internationale Zeitschrift für 
+											Geistes- und Sozialwissenschaften, Band 1 Nr. 19; Dezember 2011, (2011).</li>
+									</ol>
+								</ul>
+							</div>    
+						</article>
+
+					<article class="post post-2">
+							<header class="entry-header">
+								<div class="entry-meta">
+									<!-- <span id="imprint"><span class="meta-nav">→</span><a href="impressum.html" data-hover="Impressum">Impressum</a></span> -->
+									<span id="imprint"><a href="impressum.html" data-hover="Impressum">Impressum</a></span>
+								</div>
+							</header>
+						</article>
+
+					</main>
+                    
+                                      
+					<aside class="col-md-4">
+						<div class="widget widget-recent-posts">		
+                            <h3 class="widget-title">Forschungsbereiche</h3>		
+							<ul>
+								<li>           
+                                    <a href="forschung.html">Übersicht</a>
+								</li>    
+							</ul> 
+						</div>
+						<div class="widget widget-recent-posts">		
+							<h3 class="widget-title">Forschungsprojekte</h3>		
+							<ul>
+								<li>           
+                                    <a href="forschungsprojekte.html">Liste</a>
+								</li>    
+							</ul> 
+                        </div>                        
+                      <div class="widget widget-recent-posts">		
+							<h3 class="widget-title">Publikationen</h3>		
+							<ul>
+								<li>           
+                                    <a href="publikationen.html">Liste</a>
+								</li>    
+							</ul> 
+                        </div> 
+						<div class="widget widget-recent-posts">		
+							<h3 class="widget-title">Google Scholar</h3>		
+							<ul>
+								<li>           
+                                    <a href="https://scholar.google.de/citations?user=1ud9-RkAAAAJ&hl=de" target="_blank" rel="noopener">Link</a>
+								</li>    
+							</ul> 
+                        </div>                        
+                    </aside>
+				</div>
+			</div>
+		</div>
+
+		<!-- Mobile Menu -->
+		<div class="mobile_menu mobile_menu-hugeinc">
+			<button type="button" class="mobile_menu-close"><span class="ion-ios-close-empty"></span></button>
+			<nav>
+				<ul>
+					<li><a href="index.html">Consulting</a></li>
+					<li><a href="forschung.html">Forschung</a></li>
+                    
+                    <li><a href="lehre.html">Lehre</a></li>
+                    <li><a href="uebermich.html">Über Mich</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+				</ul>
+			</nav>
+		</div>
+                		<script src="js/script.js"></script>
+
+	</body>
+</html>

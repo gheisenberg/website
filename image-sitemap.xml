@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.gernotheisenberg.de/kontakt.html</loc>
+    <image:image>
+      <image:loc>https://www.gernotheisenberg.de/images/Portrait_Gernot_Heisenberg.jpg</image:loc>
+    </image:image>
+  </url> 
+
+  <url>
+    <loc>https://www.gernotheisenberg.de/impressum.html</loc>
+    <image:image>
+      <image:loc>https://www.gernotheisenberg.de/images/Portrait_Gernot_Heisenberg.jpg</image:loc>
+    </image:image>
+  </url> 
+    
+    
+  <url>
+    <loc>https://www.gernotheisenberg.de/uebermich.html</loc>
+    <image:image>
+      <image:loc>https://www.gernotheisenberg.de/images/Portrait_Gernot_Heisenberg.jpg</image:loc>
+    </image:image>
+  </url> 
+    
+    
+     <url>
+    <loc>https://www.gernotheisenberg.de/abschlussarbeiten.html</loc>
+    <image:image>
+      <image:loc>https://www.gernotheisenberg.de/images/emotion_klassifikation.png</image:loc>
+    </image:image>
+         
+          <image:image>
+      <image:loc>https://www.gernotheisenberg.de/images/lstm.svg</image:loc>
+    </image:image>
+  </url> 
+    
+  
+  <url>
+    <loc>https://www.gernotheisenberg.de/forschung.html</loc>
+    <image:image>
+      <image:loc>https://www.gernotheisenberg.de/images/advertising_research.png</image:loc>
+    </image:image>
+      
+       <image:image>
+      <image:loc>https://www.gernotheisenberg.de/images/computational_finance.png</image:loc>
+    </image:image>
+      
+       <image:image>
+      <image:loc>https://www.gernotheisenberg.de/images/food_insecurity.png</image:loc>
+    </image:image>
+  </url> 
+  
+  
+  <url>
+	<loc>https://www.gernotheisenberg.de/forschungsprojekte.html</loc>
+	<image:image>
+	  <image:loc>https://www.gernotheisenberg.de/images/humanitaere_hilfe.png</image:loc>
+	</image:image>
+      
+      <image:image>
+		<image:loc>https://www.gernotheisenberg.de/images/brain_maps_with_stimulus</image:loc>
+	</image:image>
+      
+      <image:image>
+		<image:loc>https://www.gernotheisenberg.de/images/hmd.png</image:loc>
+	</image:image>
+  </url> 
+
+ 
+  <url>
+	<loc>https://www.gernotheisenberg.de/prefect.html</loc>
+	<image:image>
+		<image:loc>https://www.gernotheisenberg.de/images/ipc_label_horn_of_africa.png</image:loc>
+	</image:image>
+      
+      <image:image>
+		<image:loc>https://www.gernotheisenberg.de/images/classification_results_horn_of_africa.png</image:loc>
+	</image:image>
+  </url>
+  
+  <url>
+	<loc>https://www.gernotheisenberg.de/adanalyser.html</loc>
+	<image:image>
+		<image:loc>https://www.gernotheisenberg.de/images/eyetracking_waschmittel.png.png</image:loc>
+	</image:image>
+      
+    <image:image>
+		<image:loc>https://www.gernotheisenberg.de/images/AVG_TEI_MAP.png</image:loc>
+	</image:image>
+	
+	<image:image>
+		<image:loc>https://www.gernotheisenberg.de/images/tei-eda.png</image:loc>
+	</image:image>
+	
+	<image:image>
+		<image:loc>https://www.gernotheisenberg.de/images/phase-space-diagramme.png</image:loc>
+	</image:image>
+  </url>
+
+
+</urlset> 

@@ -1,0 +1,4 @@
+﻿User-Agent: *
+Disallow:
+Sitemap:https://www.gernotheisenberg.de/sitemap.xml
+Sitemap:https://www.gernotheisenberg.de/image-sitemap.xml
